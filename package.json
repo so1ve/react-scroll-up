@@ -1,0 +1,63 @@
+{
+  "name": "@qwp/react-scroll-up",
+  "version": "1.1.2",
+  "description": "React component to render element for scroll to top of page",
+  "author": "Milos Janda <milos.janda@gmail.com>",
+  "scripts": {
+    "test": "mocha --require @babel/register test/test.jsx",
+    "build": "babel scrollUp.jsx --out-file index.js",
+    "prepublish": "npm run test && npm run build"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/so1ve/react-scroll-up.git"
+  },
+  "bug": {
+    "url": "https://github.com/so1ve/react-scroll-up/issues"
+  },
+  "keywords": [
+    "scroll",
+    "scrollUp",
+    "scrollToTop",
+    "animation",
+    "effects",
+    "react",
+    "react-component"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "detect-passive-events": "^2.0.2",
+    "object-assign": "^4.0.1",
+    "prop-types": "^15.5.8",
+    "tween-functions": "^1.1.0"
+  },
+  "peerDependencies": {
+    "react": "0.13 - 17"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/register": "^7.15.3",
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "jsdom": "^16.4.0",
+    "mocha": "^8.2.1",
+    "raf": "^3.4.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-test-renderer": "^17.0.1",
+    "sinon": "^9.2.1"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}
